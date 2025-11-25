@@ -1,0 +1,63 @@
+@use "variables" as *;
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    padding:0 1.25rem;
+    @media (min-width: 1024px) {
+            grid-template-columns: repeat(12,1fr);
+    }
+  
+}
+
+
+
+.darkBg{
+    background-color: $dark-color;
+    color: $light-color;
+    @media(min-width:1024px){
+        padding:7rem 1.75rem 3.5rem;
+    }
+}
+
+
+.partner-title{
+    height:100%;
+    margin-top: 0;
+    grid-column: 1/5;
+   
+}
+
+.partner-name{
+    font-size: 1.5rem;
+    @media(min-width:1024px){
+        font-size: 2rem;
+    }
+}
+.partner-text{
+    display: block;
+    grid-column: 1/5;
+    @media (min-width: 700px) {
+            // margin: 0 1.25rem;
+            float: left;
+            grid-column: span 2;
+    }
+
+    @media (min-width: 1024px) {
+            // margin: 0 1.25rem;
+            float: left;
+            grid-column: span 4;
+            
+    }
+}
+
+.third{
+    @media(min-width:1024px){
+        grid-column: 5/9;
+    }
+}
+
+// for now 
+
