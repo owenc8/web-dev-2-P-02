@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-section .grid-right {
+  order: 2;
+}
+.grid-section .grid-left {
+  order: 1;
+}
+.grid-section .grid-left .grid-image {
+  position: sticky;
+  top: 0;
+}
+.grid-section .grid-left .grid-image img {
+  display: block;
+}
+
+.mockup {
+  height: 100rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

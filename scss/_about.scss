@@ -1,0 +1,31 @@
+header {
+    position: sticky;
+    top: 0;
+}
+
+.grid-section {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .grid-right {
+        order: 2;
+    }
+
+    .grid-left {
+        order: 1;
+
+        .grid-image {
+            position: sticky;
+            top: 0;
+
+            img {
+                display: block;
+            }
+        }
+    }
+}
+
+.mockup {
+    height: 100rem;
+}
