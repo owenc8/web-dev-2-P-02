@@ -91,6 +91,11 @@ ul {
     @media(min-width: 1024px){
         grid-column: 1/5;
     }
+
+    @media(min-width: 1180px){
+        grid-column: 1/5;
+        font-size: 1.25rem;
+    }
 }
 .founder-details{
     margin-top: 0;
