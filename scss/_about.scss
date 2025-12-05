@@ -7,17 +7,32 @@ header {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 80rem;
+    height: 120rem;
+    margin: 5rem 1rem 5rem;
 
     .grid-right {
         order: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+
+        .grid-right-container {
+
+            position: sticky;
+            top: 8rem;
+
+            .grid-text {
+                h1 {
+                    font-size: 56px;
+                }
+
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
     }
 
     .grid-left {
         order: 1;
+        margin-top: 24rem;
 
         .site-name {
             width: 100%;
