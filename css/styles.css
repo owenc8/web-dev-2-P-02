@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 1rem 0;
 }
 
 header {
@@ -10,12 +10,19 @@ header {
 .grid-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  height: 80rem;
 }
 .grid-section .grid-right {
   order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .grid-section .grid-left {
   order: 1;
+}
+.grid-section .grid-left .site-name {
+  width: 100%;
 }
 .grid-section .grid-left .grid-image {
   position: sticky;
@@ -23,6 +30,10 @@ header {
 }
 .grid-section .grid-left .grid-image img {
   display: block;
+}
+
+.side-img {
+  width: 100%;
 }
 
 .mockup {

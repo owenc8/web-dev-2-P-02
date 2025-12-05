@@ -7,13 +7,21 @@ header {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: 80rem;
 
     .grid-right {
         order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 
     .grid-left {
         order: 1;
+
+        .site-name {
+            width: 100%;
+        }
 
         .grid-image {
             position: sticky;
@@ -24,6 +32,10 @@ header {
             }
         }
     }
+}
+
+.side-img {
+    width: 100%;
 }
 
 .mockup {
