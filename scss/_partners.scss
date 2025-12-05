@@ -1,19 +1,14 @@
 @use "variables" as *;
+@use 'normalize';
 
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem;
-    padding:0 1.25rem;
+.partner-grid{
+    @extend %baseGrid;
     @media (min-width: 1024px) {
-            grid-template-columns: repeat(12,1fr);
-            
+            grid-template-columns: repeat(12,1fr);  
     }
   
 }
-
-
 
 .darkBg{
     background-color: $dark-color;

@@ -1,13 +1,10 @@
 @use "variables" as *;
-
+@use 'normalize';
 
 // for now, then put in normalize
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem;
-    padding:0 1.25rem;
+.founder-grid{
+   @extend %baseGrid;
     @media (min-width: 1024px) {
             grid-template-columns: repeat(12,1fr);
             padding:0 1.75rem;

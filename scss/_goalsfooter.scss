@@ -1,7 +1,15 @@
 @use 'variables' as *;
+@use 'normalize';
 
 .footer-img{
     width: 100%;
+}
+
+.footer-grid{
+    @extend %baseGrid;
+    @media (min-width: 1024px) {
+            grid-template-columns: repeat(12,1fr);
+    }
 }
 
 .footer-img-box-left{
