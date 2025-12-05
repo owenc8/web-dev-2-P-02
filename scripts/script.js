@@ -1,12 +1,22 @@
-// const img = document.querySelector('img'); // Select your image
-// let rotation = 0;
+const leftImg = document.getElementById('left-img'); // Select your image
+let rotation = -90;
+console.log("Element exists:", leftImg);
 
-// setInterval(() => {
-//   rotation += 90;
-//   img.style.transform = `rotate(${rotation}deg)`;
-// }, 1000);
+function rotateLeftImg(){
+    setInterval(() => {
+    rotation = (rotation - 90) ;
+    leftImg.style.transform = `rotate(${rotation}deg)`;
+    }, 4000);
+}
+rotateLeftImg();
 
-//put in css
-// img {
-//   transition: transform 0.5s ease;
-// }
+const rightImg = document.getElementById('right-img'); // Select your image
+let rotationR = 0;
+
+function rotateRightImg(){
+setInterval(() => {
+  rotationR = (rotationR + 90) ;
+  rightImg.style.transform = `rotate(${rotationR}deg)`;
+}, 4000);
+}
+setTimeout(rotateRightImg,1000);

@@ -1,0 +1,22 @@
+@use 'variables' as *;
+
+.footer-img{
+    width: 100%;
+}
+
+.footer-img-box-left{
+    grid-column: 1/7;
+    width:calc(100% + 1.25rem);
+
+}
+
+.footer-img-box-right{
+    grid-column: 7/13;
+    width:calc(100% + 1.25rem);
+    transform: translate(-1.25rem);
+}
+
+img {
+    animation: rotate 20s ease-out infinite;
+    transition: transform 0.5s ease-in-out;
+}
