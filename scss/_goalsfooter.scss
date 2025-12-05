@@ -6,14 +6,15 @@
 
 .footer-img-box-left{
     grid-column: 1/7;
-    width:calc(100% + 1.25rem);
+    width:calc(100% + 1rem);
+    transform: translate(+0.55rem);
 
 }
 
 .footer-img-box-right{
     grid-column: 7/13;
-    width:calc(100% + 1.25rem);
-    transform: translate(-1.25rem);
+    width:calc(100% + 1rem);
+    transform: translate(-0.55rem);
 }
 
 img {
