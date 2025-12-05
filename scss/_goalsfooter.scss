@@ -13,16 +13,25 @@
 }
 
 .footer-img-box-left{
-    grid-column: 1/7;
-    width:calc(100% + 1rem);
-    transform: translate(+0.55rem);
+    grid-column: 1/5;
+    width:100%;
+    @media(min-width: 1024px){
+        grid-column: 1/7;
+        width:calc(100% + 1rem);
+        transform: translate(+0.55rem);
+    }
+    
 
 }
 
 .footer-img-box-right{
-    grid-column: 7/13;
-    width:calc(100% + 1rem);
-    transform: translate(-0.55rem);
+    grid-column: 1/5;
+    width:100%;
+    @media(min-width: 1024px){
+        grid-column: 7/13;
+        width:calc(100% + 1rem);
+        transform: translate(-0.55rem);
+    }
 }
 
 img {
