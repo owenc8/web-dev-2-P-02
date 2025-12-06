@@ -1,6 +1,21 @@
 @use 'variables' as *;
+@use 'normalize';
 
 body{
     background-color: $body-bg-color;
     color: $text-color;
+}
+
+// .footer-grid{
+//     @extend %baseGrid;
+//     @media (min-width: 1024px) {
+//             grid-template-columns: repeat(12,1fr);
+//     }
+// }
+
+.goals-grid{
+    @extend %baseGrid;
+    @media (min-width: 1024px) {
+            grid-template-columns: repeat(12,1fr);
+    }
 }

@@ -1,1 +1,147 @@
-//We will add grid stuff here
+body{
+    margin: 1rem;
+}
+
+
+.h1 p{
+        font-size: 32px;
+        line-height: 32px
+}
+
+.h2{
+    font-size: 32px;
+    line-height: 32px
+}
+a{
+    text-decoration: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    padding: 0 1.25rem;
+}
+
+@media (max-width: 1024px) {
+    .p-small {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+%baseGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    padding:0 1.25rem;
+}
+
+.h1 {
+
+        @media(min-width:1024px){
+        font-size: 28px;
+        line-height: 28px;
+    }
+}
+
+
+.how-title {
+    grid-column: 1 / 5;
+    margin: 64px 0px;
+    @media(min-width:1024px){
+        grid-column:1/10;
+    }
+}
+
+
+
+img {
+    width: 100%;
+}
+
+
+
+.how-list{
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        grid-column:7/13;
+    }
+    
+}
+.text{
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        grid-column:1/5;
+    }
+    
+}
+
+
+
+.how-list {
+        margin-top: 64px;
+        font-size: 28px;
+        line-height: 28px;
+        grid-column: 1 / 5;
+        margin: 64px 0px;
+}
+
+
+    footer {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        padding: 0px 20px;
+        @media(min-width:1024px){
+        display: grid;
+        grid-template-columns:repeat(12, 1fr);
+    }
+    }
+
+
+.summary{
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        grid-column:7/13;
+        font-size: 44px;
+        line-height: 44px;
+    }
+}
+
+
+.footer-email {
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        grid-column:7/13;
+    }
+}
+
+ li a{
+    @media(min-width:1024px){
+        text-decoration: none;
+    }
+}
+
+.footer-social{
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        grid-column:13/13;
+    }
+}
+.footer-logo{
+    grid-column: 4/5;
+    @media(min-width:1024px){
+        grid-column:1/13;
+        max-width: 10vw;
+    }
+}
+
+
+.how-graph{
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        grid-column:9/13;
+    }
+    
+}
+
