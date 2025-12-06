@@ -1,3 +1,15 @@
+@use "abstracts/variables";
+@use "base/global";
+@use "layout/container";
+@use "layout/left-section";
+@use "layout/pillars";
+@use "components/divider";
+@use "animations/reveal";
+@use "utilities/media-queries";
+
+
+
+
 
 $font-main: "Helvetica Neue", Arial, sans-serif;
 $bg-color: #f5eedf;
