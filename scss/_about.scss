@@ -5,8 +5,9 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
-    margin: 1rem 1rem 1rem;
+    margin: 0 1rem 1rem;
     font-size: 18px;
+    z-index: 2;
 
     .site-logo {
         img {
@@ -20,6 +21,22 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 45%;
+
+        //.site-email {
+        //    a {
+        //        color: white;
+        //        backdrop-filter: invert(1);
+        //    }
+        //}
+
+        //.site-language {
+        //    p {
+        //        .lan {
+        //            color: white;
+        //            backdrop-filter: invert(1);
+        //        }
+        //    }
+        //}
     }
 }
 
@@ -60,7 +77,7 @@ header {
 
         .grid-image {
             position: sticky;
-            top: 0;
+            top: 3rem;
 
             img {
                 display: block;
@@ -73,9 +90,10 @@ header {
     width: 100%;
 }
 
-.mockup {
-    height: 100rem;
-}
+//body {
+//    background-color: #000000;
+//    background: transparent;
+//}
 
 a {
     text-decoration: none;

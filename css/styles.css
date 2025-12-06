@@ -9,8 +9,9 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
-  margin: 1rem 1rem 1rem;
+  margin: 0 1rem 1rem;
   font-size: 18px;
+  z-index: 2;
 }
 header .site-logo img {
   height: 20pt;
@@ -51,7 +52,7 @@ header .site-info {
 }
 .grid-section .grid-left .grid-image {
   position: sticky;
-  top: 0;
+  top: 3rem;
 }
 .grid-section .grid-left .grid-image img {
   display: block;
@@ -59,10 +60,6 @@ header .site-info {
 
 .side-img {
   width: 100%;
-}
-
-.mockup {
-  height: 100rem;
 }
 
 a {
