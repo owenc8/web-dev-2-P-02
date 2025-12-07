@@ -3,8 +3,9 @@
 @use 'normalize' as *;
 
 .goals-grid{
-    background-color: $body-bg-color;
-    color: $text-color;
+    background-color: $dark-color;
+    color: $light-color;
+    padding-bottom: 1rem;
     
     @extend %baseGrid;
     @media (min-width: 1024px) {
@@ -48,29 +49,24 @@
     }
 }
 
-.how-title p{
-        font-size: 32px;
-        line-height: 32px;
-        @media(min-width:1024px){
-        font-size: 48px;
+.how-title p {
+    font-size: 48px;
+    line-height: 32px;
+    @media(min-width:1024px){
+        font-size: 56px;
         line-height: 48px;
-}
+    }
 }
 
 footer {
     display: grid;
-    background-color: $body-bg-color;
-    color: $text-color;
-
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     padding: 0px 20px;
     @media(min-width:1024px){
-        display: grid;
         grid-template-columns:repeat(12, 1fr);
     }
 }
-
 
 .summary{
     grid-column: 1/5;
@@ -78,6 +74,11 @@ footer {
         grid-column:7/13;
         font-size: 44px;
         line-height: 44px;
+    }
+
+    img {
+        animation: rotate 20s ease-out infinite;
+        transition: transform 0.5s ease-in-out;
     }
 }
 
@@ -92,7 +93,7 @@ footer {
 }
 
 
- li a{
+li a{
     @media(min-width:1024px){
         text-decoration: none;
     }

@@ -2,14 +2,14 @@
 
 body{
     font-family: $body-font;
-    background-color: #fffbef;
+    background-color: $light-color;
 }
 
 a{
-    color: $link-color;
+    color: $light-color;
 }
 
- ul{
+ul{
     padding: 1rem;
 
     li{

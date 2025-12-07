@@ -1,0 +1,43 @@
+@use 'variables' as *;
+@use 'normalize' as *;
+
+.value-section {
+
+    .value-left {
+
+        .value-left-container {
+
+            h2 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+
+    @media(min-width:1024px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.5rem;
+        height: 80rem;
+        margin: 5rem 1rem 10rem;
+
+        .value-left {
+
+            .value-left-container {
+                position: sticky;
+                top: 12rem;
+            }
+        }
+
+        .value-right {
+
+            .value-right-container {
+                position: sticky;
+                top: 48rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@use "variables" as *;
+@use 'normalize' as *;
+
+
+.partner-grid{
+    @extend %baseGrid;
+    @media (min-width: 1024px) {
+            grid-template-columns: repeat(12,1fr);  
+    }
+  
+}
+
+.darkBg{
+    background-color: $dark-color;
+    color: $light-color;
+    @media(min-width:1024px){
+        padding:7rem 1.75rem 3.5rem;
+    }
+}
+
+
+.partner-title{
+    height:100%;
+    margin-top: 4;
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        margin-top: 0;
+
+    }
+   
+}
+
+.partner-name{
+    font-size: 1.5rem;
+    font-weight: 400;
+    @media(min-width:1024px){
+        font-size: 2rem;
+        margin-top: 0;
+    }
+}
+.partner-text{
+    display: block;
+    grid-column: 1/5;
+    @media (min-width: 700px) {
+            // margin: 0 1.25rem;
+            float: left;
+            grid-column: span 2;
+    }
+
+    @media (min-width: 1024px) {
+            // margin: 0 1.25rem;
+            float: left;
+            grid-column: span 4;
+            
+    }
+}
+
+.third{
+    @media(min-width:1024px){
+        grid-column: 5/9;
+    }
+}
+
+// for now 
+
