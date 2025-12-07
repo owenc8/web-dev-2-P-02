@@ -1,0 +1,134 @@
+@use 'variables' as *;
+@use 'normalize' as *;
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin: 0 1rem 1rem;
+    font-size: 18px;
+    z-index: 2;
+    font-weight: bold;
+
+    .site-logo {
+        img {
+            height: 20pt;
+        }
+    }
+
+    .site-info {
+        .site-email {
+            display: none;
+        }
+    }
+
+    @media(min-width:1024px){
+        .site-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 45%;
+
+            .site-email {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.grid-section {
+
+    .grid-right {
+
+        .grid-right-container {
+
+            .grid-text {
+                margin-bottom: 6rem;
+
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    @media(min-width:1024px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        columns: 0;
+        height: 120rem;
+        margin: 5rem 1rem 5rem;
+
+        .grid-right {
+            order: 2;
+
+            .grid-right-container {
+                position: sticky;
+                top: 20rem;
+
+                .grid-text {
+                    padding-left: 6rem;
+                }
+            }
+        }
+
+        .grid-left {
+            order: 1;
+            margin-top: 24rem;
+
+            .site-name {
+                width: 100%;
+            }
+
+            .grid-image {
+                position: sticky;
+                top: 3rem;
+
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.side-img {
+    width: 100%;
+}
+
+//body {
+//    background-color: #000000;
+//    background: transparent;
+//}
+
+.email-link {
+    text-decoration: none;
+    color: $dark-color;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $dark-color;
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

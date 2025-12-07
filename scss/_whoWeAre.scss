@@ -1,0 +1,100 @@
+@use "variables" as *;
+@use 'normalize' as *;
+
+// for now, then put in normalize
+
+.founder-grid{
+    @extend %baseGrid;
+    @media (min-width: 1024px) {
+            grid-template-columns: repeat(12,1fr);
+            padding:0 1.75rem;
+    }
+  
+}
+
+.grid-header{
+    grid-column:1/5;
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+    font-weight: 400;
+    @media(min-width: 1024px){
+        font-size: 2.75rem;
+        margin-top: 7rem;
+    }
+    @media(min-width: 1180px){
+        font-size: 3.5rem;
+        margin-top: 7rem;
+    }
+}
+
+.lightBg{
+    background-color: $light-color;
+    color: $dark-color;
+}
+
+.people-container{
+    margin-top: 2rem;
+    grid-column: 1/5;
+
+    @media(min-width: 1024px){
+        grid-column: 5/13;
+        margin-top: 7rem;
+    }
+    
+}
+
+.people-item{
+    border-top: 1px solid #BBB8AF;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    column-gap: 1.25rem;
+    margin-bottom: 4rem;
+    padding-top: 1rem;
+    
+    
+    @media (max-width: 1023px) and (min-width: 700px) {
+            width: calc(50% - 2.5rem);
+            margin: 0 1.25rem;
+            float: left;
+            margin-bottom: 4rem;
+    }
+    @media (min-width:1024px){
+        margin-bottom: 7rem;
+    }
+}
+
+.people-text{
+    
+    grid-column: span 8;
+    display: grid;
+
+    @media (min-width: 1024px) {
+           grid-template-columns: repeat(8,1fr);
+    }
+}
+
+.founder-name{
+    margin: 0;
+}
+
+.name-title{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    @media(min-width: 1024px){
+        grid-column: 1/5;
+    }
+
+    @media(min-width: 1180px){
+        grid-column: 1/5;
+        font-size: 1.25rem;
+    }
+}
+
+.founder-details{
+    margin-top: 0;
+    @media(min-width: 1024px){
+        grid-column: 5/9;
+    }
+}
