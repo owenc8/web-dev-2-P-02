@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'normalize' as *;
+
 header {
     display: flex;
     flex-direction: row;
@@ -8,6 +11,7 @@ header {
     margin: 0 1rem 1rem;
     font-size: 18px;
     z-index: 2;
+    font-weight: bold;
 
     .site-logo {
         img {
@@ -16,44 +20,31 @@ header {
     }
 
     .site-info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 45%;
+        .site-email {
+            display: none;
+        }
+    }
 
-        //.site-email {
-        //    a {
-        //        color: white;
-        //        backdrop-filter: invert(1);
-        //    }
-        //}
+    @media(min-width:1024px){
+        .site-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 45%;
 
-        //.site-language {
-        //    p {
-        //        .lan {
-        //            color: white;
-        //            backdrop-filter: invert(1);
-        //        }
-        //    }
-        //}
+            .site-email {
+                display: inline-block;
+            }
+        }
     }
 }
 
 .grid-section {
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 120rem;
-    margin: 5rem 1rem 5rem;
-
     .grid-right {
-        order: 2;
 
         .grid-right-container {
-
-            position: sticky;
-            top: 8rem;
 
             .grid-text {
                 h1 {
@@ -67,20 +58,36 @@ header {
         }
     }
 
-    .grid-left {
-        order: 1;
-        margin-top: 24rem;
+    @media(min-width:1024px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 120rem;
+        margin: 5rem 1rem 5rem;
 
-        .site-name {
-            width: 100%;
+        .grid-right {
+            order: 2;
+
+            .grid-right-container {
+                position: sticky;
+                top: 8rem;
+            }
         }
 
-        .grid-image {
-            position: sticky;
-            top: 3rem;
+        .grid-left {
+            order: 1;
+            margin-top: 24rem;
 
-            img {
-                display: block;
+            .site-name {
+                width: 100%;
+            }
+
+            .grid-image {
+                position: sticky;
+                top: 3rem;
+
+                img {
+                    display: block;
+                }
             }
         }
     }
