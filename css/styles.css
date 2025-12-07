@@ -2,18 +2,8 @@ body {
   margin: 0 1rem 0;
 }
 
-.h1 p {
-  font-size: 32px;
-  line-height: 32px;
-}
-
-.h2 {
-  font-size: 32px;
-  line-height: 32px;
-}
-
-a {
-  text-decoration: none;
+body {
+  margin: 0;
 }
 
 footer {
@@ -21,6 +11,26 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
   padding: 0 1.25rem;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
 }
 
 .grid-header {
@@ -41,12 +51,8 @@ footer {
   padding: 0 1.25rem;
 }
 
-img {
-  width: 100%;
-}
-
-body {
-  margin: 0;
+.p-small {
+  font-size: 20px;
 }
 
 body {
@@ -96,8 +102,8 @@ header .site-info .site-email {
   }
 }
 
-.grid-section .grid-right .grid-right-container .grid-text h1 {
-  font-size: 56px;
+.grid-section .grid-right .grid-right-container .grid-text {
+  margin-bottom: 6rem;
 }
 .grid-section .grid-right .grid-right-container .grid-text p {
   font-size: 24px;
@@ -106,7 +112,7 @@ header .site-info .site-email {
   .grid-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 0.25rem;
+    columns: 0;
     height: 120rem;
     margin: 5rem 1rem 5rem;
   }
@@ -116,6 +122,9 @@ header .site-info .site-email {
   .grid-section .grid-right .grid-right-container {
     position: sticky;
     top: 20rem;
+  }
+  .grid-section .grid-right .grid-right-container .grid-text {
+    padding-left: 6rem;
   }
   .grid-section .grid-left {
     order: 1;
@@ -165,9 +174,6 @@ header .site-info .site-email {
   transform-origin: bottom left;
 }
 
-.value-section .value-left .value-left-container h2 {
-  font-size: 36px;
-}
 .value-section .value-left .value-left-container p {
   font-size: 24px;
 }
@@ -175,17 +181,31 @@ header .site-info .site-email {
   .value-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 0.5rem;
-    height: 80rem;
+    height: 100rem;
     margin: 5rem 1rem 10rem;
   }
   .value-section .value-left .value-left-container {
     position: sticky;
-    top: 12rem;
+    top: 5rem;
+    padding-right: 2rem;
   }
   .value-section .value-right .value-right-container {
     position: sticky;
-    top: 48rem;
+    top: 50rem;
+  }
+  .value-section .value-right .value-right-container .pillars .pillars-title {
+    font-weight: 400;
+  }
+  .value-section .value-right .value-right-container .pillars .pillar .pillar-number {
+    font-size: 72px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .value-section .value-right .value-right-container .pillars .pillar .pillar-title {
+    font-weight: 400;
+  }
+  .value-section .value-right .value-right-container .pillars .pillar .pillar-text {
+    font-size: 24px;
   }
 }
 

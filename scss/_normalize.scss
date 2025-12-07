@@ -2,18 +2,18 @@ body {
     margin: 0 1rem 0;
 }
 
-.h1 p {
-        font-size: 32px;
-        line-height: 32px
-}
+//.h1 p {
+//        font-size: 32px;
+//        line-height: 32px
+//}
 
-.h2 {
-    font-size: 32px;
-    line-height: 32px
-}
+//.h2 {
+//  font-size: 32px;
+//    line-height: 32px
+//}
 
-a {
-    text-decoration: none;
+body{
+    margin: 0;
 }
 
 footer {
@@ -21,6 +21,26 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
     padding: 0 1.25rem;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
 }
 
 .grid-header {
@@ -39,11 +59,6 @@ footer {
     padding:0 1.25rem;
 }
 
-img {
-    width: 100%;
-}
-
-
-body{
-    margin: 0;
+.p-small {
+    font-size: 20px;
 }

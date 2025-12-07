@@ -47,9 +47,7 @@ header {
         .grid-right-container {
 
             .grid-text {
-                h1 {
-                    font-size: 56px;
-                }
+                margin-bottom: 6rem;
 
                 p {
                     font-size: 24px;
@@ -61,7 +59,7 @@ header {
     @media(min-width:1024px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 0.25rem;
+        columns: 0;
         height: 120rem;
         margin: 5rem 1rem 5rem;
 
@@ -71,6 +69,10 @@ header {
             .grid-right-container {
                 position: sticky;
                 top: 20rem;
+
+                .grid-text {
+                    padding-left: 6rem;
+                }
             }
         }
 

@@ -7,10 +7,6 @@
 
         .value-left-container {
 
-            h2 {
-                font-size: 36px;
-            }
-
             p {
                 font-size: 24px;
             }
@@ -20,15 +16,16 @@
     @media(min-width:1024px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 0.5rem;
-        height: 80rem;
+        height: 100rem;
         margin: 5rem 1rem 10rem;
 
         .value-left {
 
             .value-left-container {
                 position: sticky;
-                top: 12rem;
+                top: 5rem;
+
+                padding-right: 2rem;
             }
         }
 
@@ -36,7 +33,31 @@
 
             .value-right-container {
                 position: sticky;
-                top: 48rem;
+                top: 50rem;
+
+                .pillars {
+
+                    .pillars-title {
+                        font-weight: 400;
+                    }
+
+                    .pillar {
+                        
+                        .pillar-number {
+                            font-size: 72px;
+                            font-weight: bold;
+                            margin: 0;
+                        }
+
+                        .pillar-title {
+                            font-weight: 400;
+                        }
+
+                        .pillar-text {
+                            font-size: 24px;
+                        }
+                    }
+                }
             }
         }
     }
