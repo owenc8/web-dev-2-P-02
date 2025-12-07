@@ -2,6 +2,17 @@
 @use 'variables' as *;
 @use 'normalize' as *;
 
+.how-graph{
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        grid-column:9/13;
+        position: sticky;
+        top: 8rem;
+        width: 45vw;
+        margin-top: none;
+    }
+}
+
 .goals-grid{
     background-color: $dark-color;
     color: $light-color;
@@ -58,13 +69,20 @@
     }
 }
 
+//footer {
+//    position: relative;
+//}
+
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     padding: 0px 20px;
     @media(min-width:1024px){
+        display: grid;
         grid-template-columns:repeat(12, 1fr);
+        column-gap: 28px;
+        padding: 0px 28px;
     }
 }
 
@@ -82,16 +100,16 @@ footer {
     }
 }
 
-
 .footer-email {
     grid-column: 1/5;
+    grid-row: 2;
     @media(min-width:1024px){
         grid-column:7/13;
+        grid-row: 2;
         padding-bottom: 0px;
         margin-bottom: 0px;
     }
 }
-
 
 li a{
     @media(min-width:1024px){
@@ -99,32 +117,22 @@ li a{
     }
 }
 
-
 .footer-social{
     grid-column: 1/5;
+    grid-row: 3;
     @media(min-width:1024px){
         grid-column:13/13;
+        grid-row: 2;
     }
 }
-
 
 .footer-logo{
     grid-column: 4/5;
+    grid-row: 3;
     max-width: 30vw;
     @media(min-width:1024px){
         grid-column:1/13;
+        grid-row: 2;
         max-width: 10vw;
-    }
-}
-
-
-.how-graph{
-    grid-column: 1/5;
-    @media(min-width:1024px){
-        grid-column:9/13;
-        position: sticky;
-        top: 8rem;
-        width: 50vw;
-        margin-top: none;
     }
 }
