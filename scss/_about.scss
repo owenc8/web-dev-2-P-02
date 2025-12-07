@@ -8,10 +8,12 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
-    margin: 0 1rem 1rem;
+    padding: 0 1rem 0;
+    margin-bottom: 1rem;
     font-size: 18px;
     z-index: 2;
     font-weight: bold;
+    background-color: #fffbef7b;
 
     .site-logo {
         img {
