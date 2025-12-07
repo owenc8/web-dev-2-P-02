@@ -1,1 +1,18 @@
-@use "variables" as *;
+@use 'variables' as *;
+
+body{
+    font-family: $body-font;
+    background-color: $light-color;
+}
+
+a{
+    color: $light-color;
+}
+
+ul{
+    padding: 1rem;
+
+    li{
+        list-style: none;
+    }
+ }

@@ -3,71 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Roots Digital Studio</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
+    <!--for underline animation https://stackoverflow.com/questions/54616139/how-can-i-animate-underline-from-left-to-right-->
     <header>
-        <!-- nav -->
-        <nav>
+        <div class="site-logo">
+            <img src="images/logo.png" alt="site logo of Roots Digital Stadio">
+        </div>
+        
+        <div class="site-info">
+            <div class="site-email">
+                <a class="email-link hover-underline-animation" href="https://web.archive.org/web/20230322164134/mailto:hello@rootsdigitalstudio.com">hello@rootsdigitalstudio.com</a>
+            </div>
 
-
-
-        </nav>
-
+            <div class="site-language">
+                <p><span class="lan hover-underline-animation" id=" lan-es">ES</span> / <Span class="lan hover-underline-animation" id="lan-en">EN</Span></p>
+            </div>
+        </div>
     </header>
 
     <main>
+
         <!-- company about -->
-        <section>
+        <section class="grid-section" id="about-section">
 
+            <div class="grid-left">
+                
+                <div class="site-name">
+                    <img class="side-img" src="https://web.archive.org/web/20230322164134im_/http://rootsdigitalstudio.com/wp-content/themes/blankslate/img/roots.svg" alt="Site name">
+                </div>
 
+                <div class="grid-image">
+                    <img class="side-img" src="https://web.archive.org/web/20230322164134im_/http://rootsdigitalstudio.com/wp-content/themes/blankslate/img/roots-graph.svg" alt="Symbol point towards down">
+                </div>
+            </div>
 
+            <div class="grid-right">
 
+                <div class="grid-right-container">
+                    <div class='grid-text'>
+                        <h1>We immerse ourselves from the ROOTS to make every digital project happen from start to finish.</h1>
+
+                        <p>We put the people in the center of everything we do with one goal in mind: create value for our clients. Every project has specific needs, and we identify and adapt to them, guiding and collaborating with clients throughout the design process.</p>
+                    </div>
+
+                    <div class='grid-image'>
+                        <img class="side-img" src="https://web.archive.org/web/20230322164134im_/http://rootsdigitalstudio.com/wp-content/themes/blankslate/img/roots-graph-down.svg" alt="Symbol point towards up">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Values/pillars -->
-        <section>
+        <!-- values/pillars -->
+        <section class="value-section" id="value-section">
 
+            <div class="value-left">
 
+                <div class="value-left-container">
+                    <h2>We believe in design as an active that helps us guarantee the success of digital products and services, that also help strengthen the brand consistency.</h2>
 
+                    <p class="subtext">
+                        Strategy, thinking, digital design, and product and services positioning are the main pillars of ROOTS Digital Studio, always keeping in mind that PEOPLE are at the core of everything we do.</p>
+                </div>
+            </div>
+
+            <div class="value-right">
+
+                <div class="value-right-container">
+
+                    <aside class="pillars">
+                        <h3 class="pillars-title">Our three pillars</h3>
+
+                        <hr>
+
+                        <div class="pillar">
+                            <p class="pillar-number">1</p>
+                            <h3 class="pillar-title">Strategy, Thinking, Management</h2>
+                            <p class="pillar-text">We guide and collaborate with clients to help them achieve their objectives, starting from the strategy and the management of the project in question.</p>
+                        </div>
+
+                        <hr>
+
+                        <div class="pillar">
+                            <p class="pillar-number">2</p>
+                            <h3 class="pillar-title">Digital Design</h2>
+                            <p class="pillar-text">Comprehensive, functional, and appealing design that follows the strategy co-defined with our clients.</p>
+                        </div>
+
+                        <hr>
+
+                        <div class="pillar">
+                            <p class="pillar-number">3</p>
+                            <h3 class="pillar-title">Positioning</h2>
+                            <p class="pillar-text">Definition of the SEO strategy, management of SEM campaigns, and improvement of conversion rates.</p>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
 
         </section>
 
         <!-- Goals -->
-        <section>
-
-
-
-
+        <section class="goals-grid">
+            <div class="how-title white">
+                <p>
+                We help brands and companies tackle their objectives understanding
+                their problems and opportunities, executing and positioning their
+                digital products and services perfectly.
+                </p>
+            </div>
+            <img
+                class="how-graph"
+                src="https://web.archive.org/web/20230322164134im_/http://rootsdigitalstudio.com/wp-content/themes/blankslate/img/roots-graph-white.svg"
+                alt="arrow"
+            />
+            <div class="how-list">
+                <ol>
+                <li>Understanding</li>
+                <li>Research</li>
+                <li>Strategic ideation</li>
+                <li>Design definition and development</li>
+                <li>positioning</li>
+                </ol>
+            </div>
+            <div class="text">
+                <p>
+                There are no tricks under the sleeve! This is our process. We immerse
+                ourselves and research from the ROOTS, in order to ideate
+                collaboratively a strategy with our clients, that will help us design
+                and position properly the products and services needed.
+                </p>
+            </div>
         </section>
-
 
         <!-- Who we are -->
-        <section>
+        <section class="lightBg founder-grid">
+            <h2 class="grid-header">Who are we?</h2>
+            <div class="people-container">
+                <!-- person 1 -->
+                <div class="people-item">
+                   <div class="people-text">
+                        <ul class="name-title">
+                            <li>
+                                <h4 class="founder-name">Ramiro García</h4>
+                            </li>
+                            <li>Founding Partner</li>
+    
+                        </ul>
+                        <p class="founder-details">Service Designer and Design Strategist with a background in business and marketing, with more than 7 years of experience in design and development of digital solutions.Solutions designed and developed for global brands with impact and implementation in more than 70 countries.Passionate about innovation and big-picture strategic thinking focused on culture and human behaviors, that can help solve problems.</p>
+                   </div>
+                    
+                </div>
+                <!-- person 2 -->
+                <div class="people-item">
+                    <div class="people-text">
+                        <ul class="name-title">
+                            <li>
+                                <h4 class="founder-name">Iván Berdusán</h4>
+                            </li>
+                            <li>Founding Partner</li>
+                        </ul>
+                        <p class="founder-details">Digital Product Manager with more than 15 years of experience focused on digital brand development, including digital platforms, digital products, services and digital brand experience with agile methodologies. Experience working on solutions for global brands with presence in more than 70 countries.</p>
+                    </div>
+                </div>
 
-
-
-
+            </div>
         </section>
-
 
         <!-- Partners -->
-        <section>
+        <section class="darkBg partner-grid">
+            
+            <h2 class="grid-header partner-title">Our Partners</h2>
 
+            <div class="partner-text">
+                <h3 class="partner-name">Twoo</h2>
+                <p>Twoo is the independent design practice of Danilo Campos and Carlos Kun. Together, they bring graphics into digital to create easy-to-use, well-crafted products and services.</p>
+                <a href="#">weartwoo.com</a>
+            </div>
 
+            <div  class="partner-text">
+                <h3 class="partner-name">Víctor Martin</h2>
+                <p>SEO-SEM consultant with 12 years of experience managing SEM campaigns and SEO strategies for clients of different sizes and sectors. He has worked successfully for sectors as competitive as betting, insurance, training or financing. Strategic profile that constantly seeks to generate the highest return on the project.</p>
+    
+                <a href="#">martinformenti.com</a>
+            </div>
 
+            <div class="partner-text third">
+                <h3 class="partner-name">Seis Puntos</h2>
+                <p>Seis Puntos is a company dedicated to simplify the development and implementation of customized and innovative technology solutions to achieve excellent results in a quick and efficient manner.</p>
+    
+                <a href="#">seispuntos.com</a>
+            </div>
+        </section>
+        
+        <!-- rotated Image -->
+        <section class="darkBg image-grid-section">
 
+            <div class="image-section-left">
+                <img id="left-img" class="footer-img"
+                    src="https://web.archive.org/web/20230322164134im_/http://rootsdigitalstudio.com/wp-content/themes/blankslate/img/roots-graph-white.svg" alt="arrow"/>
+            </div>
+            <div class="image-section-right">
+                <img id="right-img" class="footer-img"
+                    src="https://web.archive.org/web/20230322164134im_/http://rootsdigitalstudio.com/wp-content/themes/blankslate/img/roots-graph-white.svg" alt="arrow"/>
+            </div>
         </section>
 
-
-
     </main>
-    <!-- footer -->
-    <footer>
 
+    <footer class="darkBg">
 
+        <p class="summary h2">
+            ROOTS Digital Studio is based is based in Barcelona & La Paz, and work worldwide.
+        </p>
 
+        <ul class="footer-email p-small white">
+            <li>Tell us how we can help you and let's start!</li>
+            <li>
+                <a class="footer-social-link hover-underline-animation-white" href="https://web.archive.org/web/20230322164134/mailto:hello@rootsdigitalstudio.com" target="_blank">hello@rootsdigitalstudio.com</a>
+            </li>
+        </ul>
+        <ul class="footer-social p-small white">
+            <li>
+                <a href="https://web.archive.org/web/20230322164134/https://www.linkedin.com/company/rootsds" target="_blank">Linkedin</a>
+            </li>
+            <li>
+                <a href="https://web.archive.org/web/20230322164134/https://instagram.com/rootsdigitalstudio" target="_blank">Instagram</a>
+            </li>
+        </ul>
+        <ul class="footer-logo">
+            <li>
+                <svg viewBox="0 0 315 67" xmlns="http://www.w3.org/2000/svg" style="fill: #fffbef">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.875 0H0V8.25H28.875V8.29599L0.0385246 28.875L0.0385237 37.0693L28.875 16.5459L28.875 66H37.125L37.125 16.5L66.0159 37.0823V28.9395L37.125 8.25H66V0H37.125H28.875Z"></path>
+                    <path d="M90 66.2472H99.7825V41.4045H110.129C119.912 41.4045 124.991 43.5688 126.778 50.6264L130.823 66.2472H142.675L135.714 46.5801C134.397 42.9101 131.858 39.3343 122.64 38.8638C122.075 38.8638 121.605 38.6756 121.605 38.0169C121.605 37.4522 121.981 37.264 122.545 37.1699C132.61 35.8525 139.665 29.0772 139.665 20.3258C139.665 8.4691 133.08 0 114.644 0H90V66.2472ZM99.7825 33.1236V8.2809H116.055C125.179 8.2809 129.882 12.7037 129.882 20.514C129.882 27.5716 122.922 33.1236 113.798 33.1236H99.7825Z"></path>
+                    <path d="M165.754 17.3146C151.174 17.3146 142.427 28.5126 142.427 42.1573C142.427 55.802 151.174 67 165.754 67C180.334 67 189.082 55.802 189.082 42.1573C189.082 28.5126 180.334 17.3146 165.754 17.3146ZM165.754 58.7191C156.724 58.7191 151.457 51.2851 151.457 42.1573C151.457 33.0295 156.724 25.5955 165.754 25.5955C174.784 25.5955 180.052 33.0295 180.052 42.1573C180.052 51.2851 174.784 58.7191 165.754 58.7191Z"></path>
+                    <path d="M215.567 17.3146C200.987 17.3146 192.239 28.5126 192.239 42.1573C192.239 55.802 200.987 67 215.567 67C230.146 67 238.894 55.802 238.894 42.1573C238.894 28.5126 230.146 17.3146 215.567 17.3146ZM215.567 58.7191C206.537 58.7191 201.269 51.2851 201.269 42.1573C201.269 33.0295 206.537 25.5955 215.567 25.5955C224.597 25.5955 229.864 33.0295 229.864 42.1573C229.864 51.2851 224.597 58.7191 215.567 58.7191Z"></path>
+                    <path d="M270.12 25.9719V18.0674H256.575V4.51686H247.545V18.0674H238.515V25.9719H247.545V52.132C247.545 62.5772 252.249 66.2472 262.219 66.2472H270.12V58.3427H262.972C257.704 58.3427 256.575 56.6489 256.575 51.191V25.9719H270.12Z"></path>
+                    <path d="M272.86 49.4972C273.33 60.1306 280.761 67 293.836 67C307.005 67 315 60.6952 315 50.9087C315 43.0042 308.604 39.2402 295.623 37.8286C285.182 36.6994 283.395 34.6292 283.395 31.5239C283.395 28.3244 286.217 25.2191 293.836 25.2191C302.302 25.2191 304.371 30.2065 304.653 33.3118H313.495C312.837 24.2781 306.252 17.3146 294.118 17.3146C280.95 17.3146 274.365 24.9368 274.365 32.1826C274.365 38.4874 278.316 44.2275 290.92 45.5449C301.925 46.6742 305.97 47.9916 305.97 52.3202C305.97 55.4256 303.43 59.0955 294.212 59.0955C284.806 59.0955 281.796 53.1671 281.702 49.4972H272.86Z"></path>
+                </svg>
+            </li>
+        </ul>
+        <!-- <div class="footer-logo">
+        </div> -->
     </footer>
-    
 </body>
 </html>

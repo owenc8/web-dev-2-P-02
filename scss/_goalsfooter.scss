@@ -1,0 +1,130 @@
+
+@use 'variables' as *;
+@use 'normalize' as *;
+
+.goals-grid{
+    background-color: $dark-color;
+    color: $light-color;
+    padding-bottom: 1rem;
+    
+    @extend %baseGrid;
+    @media (min-width: 1024px) {
+            grid-template-columns: repeat(12,1fr);
+    }
+}
+
+
+.how-title {
+    grid-column: 1 / 5;
+    margin: 64px 0px;
+    @media(min-width:1024px){
+        grid-column:1/10;
+    }
+}
+
+
+.how-list{
+    grid-column: 1/5;
+    margin-top: 64px;
+    font-size: 32px;
+    line-height: 32px;
+    margin: 64px 0px;
+    @media(min-width:1024px){
+        grid-column:1/13;
+        width: 40vw;
+        font-size: 48px;
+        line-height: 48px;
+        margin: 64px 0px;
+    }
+}
+
+
+.text{
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        grid-column:1/5;
+        font-size: 20px;
+        line-height: 24px;
+        width: 30vw;
+    }
+}
+
+.how-title p {
+    font-size: 48px;
+    line-height: 32px;
+    @media(min-width:1024px){
+        font-size: 56px;
+        line-height: 48px;
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    padding: 0px 20px;
+    @media(min-width:1024px){
+        grid-template-columns:repeat(12, 1fr);
+    }
+}
+
+.summary{
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        grid-column:7/13;
+        font-size: 44px;
+        line-height: 44px;
+    }
+
+    img {
+        animation: rotate 20s ease-out infinite;
+        transition: transform 0.5s ease-in-out;
+    }
+}
+
+
+.footer-email {
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        grid-column:7/13;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+
+li a{
+    @media(min-width:1024px){
+        text-decoration: none;
+    }
+}
+
+
+.footer-social{
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        grid-column:13/13;
+    }
+}
+
+
+.footer-logo{
+    grid-column: 4/5;
+    max-width: 30vw;
+    @media(min-width:1024px){
+        grid-column:1/13;
+        max-width: 10vw;
+    }
+}
+
+
+.how-graph{
+    grid-column: 1/5;
+    @media(min-width:1024px){
+        grid-column:9/13;
+        position: sticky;
+        top: 8rem;
+        width: 50vw;
+        margin-top: none;
+    }
+}

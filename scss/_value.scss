@@ -1,0 +1,64 @@
+@use 'variables' as *;
+@use 'normalize' as *;
+
+.value-section {
+
+    .value-left {
+
+        .value-left-container {
+
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+
+    @media(min-width:1024px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100rem;
+        margin: 5rem 1rem 10rem;
+
+        .value-left {
+
+            .value-left-container {
+                position: sticky;
+                top: 5rem;
+
+                padding-right: 2rem;
+            }
+        }
+
+        .value-right {
+
+            .value-right-container {
+                position: sticky;
+                top: 50rem;
+
+                .pillars {
+
+                    .pillars-title {
+                        font-weight: 400;
+                    }
+
+                    .pillar {
+                        
+                        .pillar-number {
+                            font-size: 72px;
+                            font-weight: bold;
+                            margin: 0;
+                        }
+
+                        .pillar-title {
+                            font-weight: 400;
+                        }
+
+                        .pillar-text {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
