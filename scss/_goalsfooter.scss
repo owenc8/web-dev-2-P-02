@@ -58,6 +58,7 @@
 }
 
 footer {
+    display: grid;
     background-color: $body-bg-color;
     color: $text-color;
 
@@ -68,7 +69,7 @@ footer {
         display: grid;
         grid-template-columns:repeat(12, 1fr);
     }
-    }
+}
 
 
 .summary{

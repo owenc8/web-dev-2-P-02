@@ -121,7 +121,7 @@ header .site-info .site-email {
   width: 100%;
 }
 
-a {
+.email-link {
   text-decoration: none;
   color: #1c1a1a;
 }
@@ -210,6 +210,7 @@ a {
 }
 
 footer {
+  display: grid;
   background-color: #1c1a1a;
   color: #fffbef;
   grid-template-columns: repeat(4, 1fr);
