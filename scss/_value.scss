@@ -1,64 +1,69 @@
 @use 'variables' as *;
-@use 'normalize' as *;
+// @use 'normalize' as *;
 
 .value-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5rem 1rem 10rem;
 
-    .value-left {
-
-        .value-left-container {
-
-            p {
-                font-size: 24px;
-            }
-        }
-    }
-
-    @media(min-width:1024px) {
+   @media(min-width:1024px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         height: 100rem;
         margin: 5rem 1rem 10rem;
+        font-weight: 400;
+    }
+}
 
-        .value-left {
+.value-left-container {
 
-            .value-left-container {
-                position: sticky;
-                top: 5rem;
+    p {
+        font-size: 24px;
+    }
+    @media(min-width:1024px){
+        position: sticky;
+        top: 5rem;
+        padding-right: 2rem;
+    }
+}
 
-                padding-right: 2rem;
-            }
-        }
-
-        .value-right {
-
-            .value-right-container {
-                position: sticky;
-                top: 50rem;
-
-                .pillars {
-
-                    .pillars-title {
-                        font-weight: 400;
-                    }
-
-                    .pillar {
-                        
-                        .pillar-number {
-                            font-size: 72px;
-                            font-weight: bold;
-                            margin: 0;
-                        }
-
-                        .pillar-title {
-                            font-weight: 400;
-                        }
-
-                        .pillar-text {
-                            font-size: 24px;
-                        }
-                    }
-                }
-            }
+    .value-right-container {
+        @media(min-width:1024px){
+        position: sticky;
+        top: 50rem;
         }
     }
+
+
+.pillars{
+    font-weight: 400;
+}
+
+.pillars-title {
+    font-weight: 400;
+}
+
+
+    
+.pillar-number {
+    font-size:64px;
+    font-weight: 400;
+    margin: 0;
+    @media(min-width:1024px){
+        font-size: 80px;
+        font-weight: 400;
+        margin: 0;
+    }
+}
+
+.pillar-title {
+    font-weight: 400;
+    font-size: 24px;
+    @media(min-width:1024px){
+        font-size: 32px;
+    }
+}
+
+.pillar-text {
+    font-size: 18px;
 }
