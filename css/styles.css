@@ -104,11 +104,19 @@ header .site-info .site-email {
   }
 }
 
+.grid-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .grid-section .grid-right .grid-right-container .grid-text {
   margin-bottom: 6rem;
 }
+.grid-section .grid-right .grid-right-container .grid-text h1 {
+  font-size: 28px;
+  font-weight: 400;
+}
 .grid-section .grid-right .grid-right-container .grid-text p {
-  font-size: 24px;
+  font-size: 16px;
 }
 @media (min-width: 1024px) {
   .grid-section {
@@ -127,6 +135,9 @@ header .site-info .site-email {
   }
   .grid-section .grid-right .grid-right-container .grid-text {
     padding-left: 6rem;
+  }
+  .grid-section .grid-right .grid-right-container .grid-text p {
+    font-size: 24px;
   }
   .grid-section .grid-left {
     order: 1;
@@ -176,8 +187,31 @@ header .site-info .site-email {
   transform-origin: bottom left;
 }
 
+.value-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.value-section .value-left .value-left-container h2 {
+  font-size: 28px;
+  font-weight: 400;
+}
 .value-section .value-left .value-left-container p {
+  font-size: 16px;
+}
+.value-section .value-right .value-right-container .pillars .pillars-title {
   font-size: 24px;
+  font-weight: 400;
+}
+.value-section .value-right .value-right-container .pillars .pillar .pillar-number {
+  font-size: 48px;
+  margin: 0;
+}
+.value-section .value-right .value-right-container .pillars .pillar .pillar-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+.value-section .value-right .value-right-container .pillars .pillar .pillar-text {
+  font-size: 16px;
 }
 @media (min-width: 1024px) {
   .value-section {
@@ -190,6 +224,9 @@ header .site-info .site-email {
     position: sticky;
     top: 5rem;
     padding-right: 2rem;
+  }
+  .value-section .value-left .value-left-container p {
+    font-size: 24px;
   }
   .value-section .value-right .value-right-container {
     position: sticky;
