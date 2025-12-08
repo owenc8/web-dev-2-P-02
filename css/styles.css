@@ -72,7 +72,8 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
-  margin: 0 1rem 1rem;
+  padding: 0 1rem 0;
+  margin-bottom: 1rem;
   font-size: 18px;
   z-index: 5;
   font-weight: normal;
@@ -275,6 +276,19 @@ header .email-link {
   }
 }
 
+.how-graph {
+  grid-column: 1/5;
+}
+@media (min-width: 1024px) {
+  .how-graph {
+    grid-column: 9/13;
+    position: sticky;
+    top: 8rem;
+    width: 45vw;
+    margin-top: none;
+  }
+}
+
 .goals-grid {
   background-color: rgb(28, 26, 26);
   color: rgb(255, 251, 239);
@@ -374,6 +388,7 @@ footer {
 
 .footer-email {
   grid-column: 1/5;
+  grid-row: 2;
 }
 @media (min-width: 1024px) {
   .footer-email {
@@ -384,6 +399,7 @@ footer {
 
 .footer-social {
   grid-column: 1/5;
+  grid-row: 3;
 }
 @media (min-width: 1024px) {
   .footer-social {
