@@ -44,6 +44,9 @@ header {
 
 .grid-section {
 
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     .grid-right {
 
         .grid-right-container {
@@ -51,8 +54,13 @@ header {
             .grid-text {
                 margin-bottom: 6rem;
 
+                h1 {
+                    font-size: 28px;
+                    font-weight: 400;
+                }
+
                 p {
-                    font-size: 24px;
+                    font-size: 16px;
                 }
             }
         }
@@ -74,6 +82,10 @@ header {
 
                 .grid-text {
                     padding-left: 6rem;
+
+                    p {
+                        font-size: 24px;
+                    }
                 }
             }
         }
@@ -101,11 +113,6 @@ header {
 .side-img {
     width: 100%;
 }
-
-//body {
-//    background-color: #000000;
-//    background: transparent;
-//}
 
 .email-link {
     text-decoration: none;

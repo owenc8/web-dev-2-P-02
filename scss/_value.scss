@@ -3,14 +3,54 @@
 
 .value-section {
 
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     .value-left {
 
         .value-left-container {
 
+            h2 {
+                font-size: 28px;
+                font-weight: 400;
+            }
+
             p {
-                font-size: 24px;
+                font-size: 16px;
             }
         }
+    }
+
+    .value-right {
+
+        .value-right-container {
+
+            .pillars {
+
+                .pillars-title {
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+
+                .pillar {
+
+                    .pillar-number {
+                        font-size: 48px;
+                        margin: 0;
+                    }
+
+                    .pillar-title {
+                        font-size: 24px;
+                        font-weight: 400;
+                    }
+
+                    .pillar-text {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
     }
 
     @media(min-width:1024px) {
@@ -26,6 +66,10 @@
                 top: 5rem;
 
                 padding-right: 2rem;
+
+                p {
+                    font-size: 24px;
+                }
             }
         }
 
