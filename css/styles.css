@@ -175,7 +175,7 @@ header .email-link {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #1c1a1a;
+  background-color: #fffbef;
   transition: transform 0.25s ease-out;
   transform-origin: bottom left;
 }
