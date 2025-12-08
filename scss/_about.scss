@@ -27,7 +27,7 @@ header {
 
     .site-info {
         .site-email {
-            display: block;
+            display: none;
         }
     }
     .email-link{
@@ -51,6 +51,9 @@ header {
 
 .grid-section {
 
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     .grid-right {
 
         .grid-right-container {
@@ -58,8 +61,12 @@ header {
             .grid-text {
                 margin-bottom: 6rem;
 
-                p {
+                h1 {
                     font-size: 24px;
+                }
+
+                p {
+                    font-size: 18px;
                 }
             }
         }
@@ -81,6 +88,10 @@ header {
 
                 .grid-text {
                     padding-left: 6rem;
+
+                    p {
+                        font-size: 24px;
+                    }
                 }
             }
         }

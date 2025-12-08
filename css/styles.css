@@ -85,7 +85,7 @@ header .site-logo img {
   filter: invert(100%);
 }
 header .site-info .site-email {
-  display: block;
+  display: none;
 }
 header .email-link {
   color: #fffbef;
@@ -103,11 +103,18 @@ header .email-link {
   }
 }
 
+.grid-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .grid-section .grid-right .grid-right-container .grid-text {
   margin-bottom: 6rem;
 }
-.grid-section .grid-right .grid-right-container .grid-text p {
+.grid-section .grid-right .grid-right-container .grid-text h1 {
   font-size: 24px;
+}
+.grid-section .grid-right .grid-right-container .grid-text p {
+  font-size: 18px;
 }
 @media (min-width: 1024px) {
   .grid-section {
@@ -126,6 +133,9 @@ header .email-link {
   }
   .grid-section .grid-right .grid-right-container .grid-text {
     padding-left: 6rem;
+  }
+  .grid-section .grid-right .grid-right-container .grid-text p {
+    font-size: 24px;
   }
   .grid-section .grid-left {
     order: 1;
@@ -273,19 +283,6 @@ header .email-link {
     width: 45vw;
     margin-top: none;
     margin-bottom: 7rem;
-  }
-}
-
-.how-graph {
-  grid-column: 1/5;
-}
-@media (min-width: 1024px) {
-  .how-graph {
-    grid-column: 9/13;
-    position: sticky;
-    top: 8rem;
-    width: 45vw;
-    margin-top: none;
   }
 }
 
